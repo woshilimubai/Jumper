@@ -203,8 +203,12 @@ if __name__ == "__main__":
             fault = fault + 1          # will be reset
             fault_cnt = fault_cnt+1    # not not be reset
             cv2.waitKey(2000)
-            if fault > 10:
-                exit()
+            if fault > 3:
+                click_x = 150 + random.randint(-60, 60)  # 防作弊，变换点击位置
+                click_y = 500 + random.randint(-20, 20)
+                click(click_x, click_y, 0.015)
+                fault = 0
+                #exit()
             continue
 
         # if everything is checked and we are ready to jump!
