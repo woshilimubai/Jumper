@@ -210,7 +210,9 @@ if __name__ == "__main__":
         # if everything is checked and we are ready to jump!
         fault = 0
         cv2.waitKey(100)                                # 稍微等一下，留时间给 opencv 绘图并输出 output image
-        click_x = 288 + random.randint(-60, 60)         # 防作弊，变换点击位置
-        click_y = 880 + random.randint(-20, 20)
+        #click_x = 288 + random.randint(-60, 60)         # 防作弊，变换点击位置
+        #click_y = 880 + random.randint(-20, 20)
+        click_x = 150 + random.randint(-60, 60)  # 更改鼠标点击位置，以适配我自己的电脑屏幕
+        click_y = 500 + random.randint(-20, 20)
         click(click_x, click_y, time)
         cv2.waitKey(2000 + random.randint(-100, 300))   # 防作弊，随机等待时间
