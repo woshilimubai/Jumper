@@ -12,7 +12,7 @@
 
 ## 我遇到的问题
 * 出现了一条很长的线，然后图像不会更新，等着错误次数超过10，即fault > 10 时，该程序会结束运行。
-![跳一跳错误01.png](http://upload-images.jianshu.io/upload_images/6328913-29d98d380a939f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+[跳一跳错误01.png](http://upload-images.jianshu.io/upload_images/6328913-29d98d380a939f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 * 解决方法:
 > 更改了`dist < 50 or dist > 700`的处理方法，更改后的方法是，当出现上述问题是，让鼠标模拟点击一下手机的屏幕。
 ```python
