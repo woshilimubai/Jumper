@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
         # 截取屏幕
         file_name = 'temp.bmp'
-        im = ImageGrab.grab(bbox=(0, 70, 558, 1045))  # 魔法参数1
+        im = ImageGrab.grab(bbox=(0, 86, 562, 1022))  # 魔法参数1
         im.save(file_name,'bmp')
         img = cv2.imread(file_name)
         img = cv2.resize(img, (540, 960))             # 统一转换成 540*960 分辨率
