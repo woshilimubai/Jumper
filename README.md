@@ -29,3 +29,6 @@ if(dist < 50 or dist > 700):
                 #exit()
     continue
 ```
+## 参考链接
+[简书教程](https://www.jianshu.com/p/c5138500afbf)
+[测试视频](http://v.youku.com/v_show/id_XMzM0MjU1NjY5Ng)
